@@ -1,0 +1,10 @@
+// Cloudflare Workers: sitio estático, sin código de servidor
+{
+  "name": "dnice-catalogo",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./",
+    // Rutas inexistentes muestran 404.html con estado 404
+    "not_found_handling": "404-page"
+  }
+}

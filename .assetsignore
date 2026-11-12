@@ -1,0 +1,7 @@
+# Archivos del repositorio que no se publican en el sitio
+.git
+.gitattributes
+.nojekyll
+README.md
+FOTOS.md
+wrangler.jsonc

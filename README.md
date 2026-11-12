@@ -13,8 +13,12 @@ data/productos.js      ← Datos de la tienda y productos. Lo único que se edit
 img/productos/         Fotos de productos (.webp o .jpg)
 img/marca/             Logo, versión sin lema para el encabezado (logo-dnice-encabezado.png) e ícono
 FOTOS.md               Cómo tomar y mejorar las fotos (prompts para ChatGPT)
+img/compartir.jpg      Imagen que muestran WhatsApp y Facebook al compartir el enlace (1200 × 630)
 modelos/               (crear cuando haya) modelos 3D .glb
-.nojekyll              Evita que GitHub Pages procese el sitio con Jekyll
+404.html               Página para enlaces que no existen
+robots.txt, sitemap.xml  Para Google
+wrangler.jsonc         Configuración de Cloudflare Workers
+.assetsignore          Archivos del repositorio que Cloudflare no publica
 ```
 
 ## Probar en tu computadora
@@ -27,22 +31,26 @@ python -m http.server 8000
 
 y abre http://localhost:8000
 
-## Publicar en GitHub Pages
+## Publicar (Cloudflare Workers + dominio dnice.com.mx)
 
-1. Crea un repositorio nuevo en GitHub (por ejemplo `dnice-catalogo`).
-2. Sube el contenido de esta carpeta a la raíz del repositorio:
-   ```
-   git init
-   git add .
-   git commit -m "Catálogo D'Nice"
-   git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/dnice-catalogo.git
-   git push -u origin main
-   ```
-3. En el repositorio: **Settings › Pages › Build and deployment**, elige **Deploy from a branch**, rama `main`, carpeta `/ (root)` y guarda.
-4. En uno o dos minutos queda en `https://TU_USUARIO.github.io/dnice-catalogo/`.
+El sitio vive en el repositorio `lortega14/dnice-catalogo` de GitHub y Cloudflare lo publica solo cada vez que se sube un cambio a la rama `main`.
 
-Para un dominio propio (por ejemplo `dnicemuebles.com`), agrégalo en **Settings › Pages › Custom domain** y configura los registros DNS que indica GitHub.
+Configuración inicial, una sola vez, en el panel de Cloudflare:
+
+1. **Workers & Pages › Create › Workers › Import a repository** y elige `dnice-catalogo`.
+2. Deja el nombre `dnice-catalogo`, sin comando de build ni carpeta de salida (el sitio es estático y `wrangler.jsonc` ya indica que se publica la raíz). Guarda y despliega.
+3. En el Worker: **Settings › Domains & Routes › Add › Custom domain**, agrega `dnice.com.mx` y `www.dnice.com.mx`. Si el dominio ya está en Cloudflare, los registros DNS y el certificado se crean solos.
+4. (Opcional) En **Rules › Redirect Rules**, redirige `www.dnice.com.mx` a `dnice.com.mx` para que todo use una sola dirección.
+
+Para publicar cambios después:
+
+```
+git add .
+git commit -m "Describe el cambio"
+git push
+```
+
+En uno o dos minutos el sitio se actualiza. Si se cambia el dominio, actualiza las direcciones `https://dnice.com.mx/` en `index.html` (canonical, og:url, og:image), `robots.txt` y `sitemap.xml`.
 
 ## Datos de la tienda
 

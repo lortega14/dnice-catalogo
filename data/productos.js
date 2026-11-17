@@ -111,6 +111,68 @@ window.CATALOGO = {
       modelo3d: ""
     },
     {
+      id: "sillon-orejero-capitonado",
+      nombre: "Sillón orejero capitonado",
+      categoria: "sillones",
+      descripcion: "Respaldo alto con orejas envolventes y botones capitonados, sobre patas de madera inclinadas. Lo tenemos en terciopelo azul marino, tela gris claro y terciopelo fucsia.",
+      medidas: { frente: "", fondo: "", alto: "" },
+      precio: "",
+      // Mismo modelo en tres colores: una foto por color
+      fotos: [
+        "img/productos/sillon-orejero-azul.webp",
+        "img/productos/sillon-orejero-gris.webp",
+        "img/productos/sillon-orejero-fucsia.webp"
+      ],
+      encuadre: "center",
+      modelo3d: ""
+    },
+    {
+      id: "sillon-envolvente",
+      nombre: "Sillón envolvente",
+      categoria: "sillones",
+      descripcion: "Sillón tipo concha con respaldo y brazos de una sola pieza, asiento amplio y base de madera con patas cónicas, o con patas metálicas negras de puntas doradas. Lo tenemos en terciopelo gris perla, rosa palo, negro, mostaza, gris plata, azul petróleo y azul rey.",
+      medidas: { frente: "", fondo: "", alto: "" },
+      precio: "",
+      // Mismo modelo en varios colores: una foto por color
+      fotos: [
+        "img/productos/sillon-envolvente-gris-perla.webp",
+        "img/productos/sillon-envolvente-rosa.webp",
+        "img/productos/sillon-envolvente-negro.webp",
+        "img/productos/sillon-envolvente-mostaza.webp",
+        "img/productos/sillon-envolvente-gris-plata.webp",
+        "img/productos/sillon-envolvente-gris-bicolor.webp",
+        "img/productos/sillon-envolvente-azul-petroleo.webp",   // con patas metálicas
+        "img/productos/sillon-envolvente-azul.webp"   // patas aún con plástico protector; cambiar cuando haya otra foto
+      ],
+      encuadre: "center",
+      modelo3d: ""
+    },
+    {
+      id: "sillon-envolvente-borreguito",
+      nombre: "Sillón envolvente en borreguito",
+      categoria: "sillones",
+      descripcion: "Sillón tipo concha tapizado en tela borreguito color hueso, suave y con textura rizada. Lleva cojín de respaldo y base de madera con patas cónicas.",
+      medidas: { frente: "", fondo: "", alto: "" },
+      precio: "",
+      fotos: [
+        "img/productos/sillon-borreguito.webp",
+        "img/productos/sillon-borreguito-2.webp"
+      ],
+      encuadre: "center",
+      modelo3d: ""
+    },
+    {
+      id: "sillon-base-dorada",
+      nombre: "Sillón con base dorada",
+      categoria: "sillones",
+      descripcion: "Respaldo curvo y brazos rectos tapizados en terciopelo azul petróleo, sobre una estructura metálica dorada que abraza el asiento y le sirve de base.",
+      medidas: { frente: "", fondo: "", alto: "" },
+      precio: "",
+      fotos: ["img/productos/sillon-base-dorada-azul.webp"],
+      encuadre: "center",
+      modelo3d: ""
+    },
+    {
       id: "sala-esquinera-chocolate",
       nombre: "Sala esquinera chocolate",
       categoria: "salas",

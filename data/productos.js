@@ -112,7 +112,7 @@ window.CATALOGO = {
     },
     {
       id: "sillon-orejero-capitonado",
-      nombre: "Sillón orejero capitonado",
+      nombre: "Sillón Época",
       categoria: "sillones",
       descripcion: "Respaldo alto con orejas envolventes y botones capitonados, sobre patas de madera inclinadas. Lo tenemos en terciopelo azul marino, tela gris claro y terciopelo fucsia.",
       medidas: { frente: "", fondo: "", alto: "" },
@@ -128,7 +128,7 @@ window.CATALOGO = {
     },
     {
       id: "sillon-envolvente",
-      nombre: "Sillón envolvente",
+      nombre: "Sillón Génova",
       categoria: "sillones",
       descripcion: "Sillón tipo concha con respaldo y brazos de una sola pieza, asiento amplio y base de madera con patas cónicas, o con patas metálicas negras de puntas doradas. Lo tenemos en terciopelo gris perla, rosa palo, negro, mostaza, gris plata, azul petróleo y azul rey.",
       medidas: { frente: "", fondo: "", alto: "" },
@@ -149,7 +149,7 @@ window.CATALOGO = {
     },
     {
       id: "sillon-envolvente-borreguito",
-      nombre: "Sillón envolvente en borreguito",
+      nombre: "Sillón Génova en borreguito",
       categoria: "sillones",
       descripcion: "Sillón tipo concha tapizado en tela borreguito color hueso, suave y con textura rizada. Lleva cojín de respaldo y base de madera con patas cónicas.",
       medidas: { frente: "", fondo: "", alto: "" },
@@ -169,6 +169,42 @@ window.CATALOGO = {
       medidas: { frente: "", fondo: "", alto: "" },
       precio: "",
       fotos: ["img/productos/sillon-base-dorada-azul.webp"],
+      encuadre: "center",
+      modelo3d: ""
+    },
+    {
+      id: "sillon-luca",
+      nombre: "Sillón Luca",
+      categoria: "sillones",
+      descripcion: "Respaldo alto y recto con brazos curvos que bajan hasta el piso, asiento firme y cojín decorativo de grecas. Lo tenemos en terciopelo verde olivo, rosa palo, rosa y berenjena, y en tela tipo lino.",
+      medidas: { frente: "", fondo: "", alto: "" },
+      precio: "",
+      // Mismo modelo en cinco colores. Solo el olivo tiene las patas sin el plástico protector.
+      fotos: [
+        "img/productos/sillon-luca-olivo.webp",
+        "img/productos/sillon-luca-lino.webp",
+        "img/productos/sillon-luca-rosa-palo.webp",
+        "img/productos/sillon-luca-rosa.webp",
+        "img/productos/sillon-luca-berenjena.webp"
+      ],
+      encuadre: "center",
+      modelo3d: ""
+    },
+    {
+      id: "sillon-lisboa",
+      nombre: "Sillón Lisboa",
+      categoria: "sillones",
+      descripcion: "Respaldo alto, liso o capitonado, con brazos de madera oscura que bajan en curva y patas rectas de madera. Lo tenemos en tela texturizada hueso, café jaspeado, gris con zigzag, crema y estampado geométrico gris.",
+      medidas: { frente: "", fondo: "", alto: "" },
+      precio: "",
+      // Mismo modelo en cinco telas. El geométrico tiene las patas con plástico protector.
+      fotos: [
+        "img/productos/sillon-lisboa-hueso.webp",
+        "img/productos/sillon-lisboa-cafe.webp",
+        "img/productos/sillon-lisboa-gris-zigzag.webp",
+        "img/productos/sillon-lisboa-crema.webp",
+        "img/productos/sillon-lisboa-geometrico.webp"
+      ],
       encuadre: "center",
       modelo3d: ""
     },

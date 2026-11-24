@@ -209,6 +209,41 @@ window.CATALOGO = {
       modelo3d: ""
     },
     {
+      id: "sillon-kenia",
+      nombre: "Sillón Kenia",
+      categoria: "sillones",
+      descripcion: "Sillón bajo de asiento y respaldo en una sola curva, acolchado en franjas horizontales, sobre base tubular de metal dorado. Lo tenemos en terciopelo carbón, ocre, azul marino y verde petróleo (este con base negra), y en tela gris claro y marfil.",
+      medidas: { frente: "", fondo: "", alto: "" },
+      precio: "",
+      // Mismo modelo en seis colores
+      fotos: [
+        "img/productos/sillon-kenia-carbon.webp",
+        "img/productos/sillon-kenia-ocre.webp",
+        "img/productos/sillon-kenia-gris.webp",
+        "img/productos/sillon-kenia-marfil.webp",
+        "img/productos/sillon-kenia-azul-marino.webp",
+        "img/productos/sillon-kenia-petroleo.webp"
+      ],
+      encuadre: "center",
+      modelo3d: ""
+    },
+    {
+      id: "sillon-murano",
+      nombre: "Sillón Murano",
+      categoria: "sillones",
+      descripcion: "Sillón de respaldo alto con orejas, respaldo con pespuntes verticales en dos secciones y brazos con ribete en relieve, sobre patas de madera. Lo tenemos en terciopelo gris, arena y topo.",
+      medidas: { frente: "", fondo: "", alto: "" },
+      precio: "",
+      // Mismo modelo en tres colores. El topo tiene las patas delanteras con plástico protector.
+      fotos: [
+        "img/productos/sillon-murano-gris.webp",
+        "img/productos/sillon-murano-arena.webp",
+        "img/productos/sillon-murano-topo.webp"
+      ],
+      encuadre: "center",
+      modelo3d: ""
+    },
+    {
       id: "sala-esquinera-chocolate",
       nombre: "Sala esquinera chocolate",
       categoria: "salas",
